@@ -1,0 +1,65 @@
+<html>
+	<title>New Life Fellowship -- HomePage
+	</title>
+<link rel="Stylesheet"	type="text/css" href="indexStyle.css" /> 		
+	
+<style type="text/css">
+	a:active {
+		color: #FFE6E6;
+	}
+	a:hover {
+		color: #008080;
+	}
+</style>
+<body id="bodyId" class="bodyClass">
+<div id="topBannerId" class="topBannerClass">
+	<div id="h1" class="HomeDivClass" style="">
+		<span style="padding-top: 0px; padding-left: 0px; margin-left: 0px;">Home
+		</span>
+	</div>
+	<div id="s1"  style="" class="ServicesDiv" onMouseOver="ServicesFunction()" onMouseOut="ServicesFunctionBack()"><span style="padding-top: 0px; margin: auto; padding-left: 0px; margin-left: 0px;">Services</span>
+		<div id="s2" class="ServicesDrop" style=" margin-top: 3%;"><span id="s02" onMouseOver="AmHover()" style="text-indent: 5%; padding-top: 10px; text-align: center; width: 100%;">Sunday AM</span>
+		</div>
+		<div id="s3" class="ServicesDrop" style="padding-top: 3%;"><span style="text-indent: 5%; padding-top: 0px; margin-top: 0px; top: 0px; position: relative; text-align: center; width: 100%;">Sunday PM</span>
+		</div>
+	</div>
+	
+</div>
+<div style="top 10%;">
+		<img src="Images/nlf.jpg" width="90%" />
+	</div>
+<div id="bottomBannerId" class="bottomBannerClass">
+</div>
+<script type="text/javascript">
+	function ServicesFunction()
+	{
+	document.getElementById('s1').style.paddingRight = "75%";
+	document.getElementById('s1').style.opacity = "1";
+
+	document.getElementById('s1').style.transition = "1.9s";
+	document.getElementById('s2').style.visibility = "visible";
+	document.getElementById('s3').style.visibility = "visible";
+
+
+	}
+	function ServicesFunctionBack()
+	{
+	document.getElementById('s1').style.paddingRight = "0%";
+	document.getElementById('s1').style.opacity = "1";
+	document.getElementById('s2').style.visibility = "hidden";
+	document.getElementById('s3').style.visibility = "hidden";
+
+	}
+	function AmHover()
+	{
+		document.getElementByID('s02').style.backgroundColor = "red"
+		document.getElementByID('s02').style.color = "white"
+
+	}
+</script>
+
+
+
+
+</body> 		
+</html>
